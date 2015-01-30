@@ -15,6 +15,7 @@ gem 'web-console', '~> 2.0'
 
 gem 'haml-rails'
 gem 'autoprefixer-rails'
+gem 'normalize-rails'
 
 gem 'figaro'
 

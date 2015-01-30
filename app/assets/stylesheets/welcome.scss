@@ -1,0 +1,48 @@
+.header-top-wpapper {
+  height: 44px;
+  background-color: #BB1B24;
+}
+.header-top {
+  margin: 0 auto;
+  width: 960px;
+
+  .logo {
+    width: 170px;
+    float: left;
+  }
+  nav {
+    float: left;
+
+    a {
+      display: block;
+      border-left: 1px solid #BB5457;
+      line-height: 44px;
+      float: left;
+      padding: 0 10px;
+      text-align: center;
+      color: #CD6E71;
+      vertical-align: middle;
+      &:last-child {
+        border-right: 1px solid #BB5457;
+      }
+      &:hover {
+        background-color: #A01920;
+      }
+    }
+  }
+  nav.blah2 {
+    float: right;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+.search {
+  width: 960px;
+  margin: 0 auto;
+  height: 311px;
+  background-color: #999999;
+  .search-bar {
+    padding-top: 185px;
+  }
+}
