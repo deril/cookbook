@@ -9,14 +9,13 @@
 
   %body
     %header
-      .header-top-wpapper
-        .header-top
-          .logo Wanna Eat
-          %nav.blah
-            %a Food
-            %a Drink
-          %nav.blah2
-            %a Search Recipes
-            %a About Us
-            %a Login
+      .container
+        .logo WannaEat
+        %nav.main-cats.main-menu
+          %a{href: '/'} Food
+          %a{href: '/'} Drinks
+        %nav.user-actions.main-menu
+          %a{href: '/'} Search Recipes
+          %a{href: '/'} About Us
+          %a{href: '/'} Login
     = yield

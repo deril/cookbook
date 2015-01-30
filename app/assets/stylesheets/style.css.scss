@@ -1,0 +1,66 @@
+@import "variables";
+
+body {
+  background-color: #f1f1f1;
+}
+
+input {
+  height: 40px;
+  padding-left: 14px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  height: 44px;
+  background-color: #c62f2f;
+}
+
+.logo {
+  background: image-url('logo.png') no-repeat 0 0;
+  height: 43px;
+  padding: 0 0 5px 61px;
+  float: left;
+  font: {
+    size: 30px;
+    family: "Engine-Regular";
+  }
+  color: #ffffff;
+}
+
+.main-menu {
+  float: left;
+  margin-left: 26px;
+
+  a {
+    font: {
+      family: "Conv_HelveticaNeue-Condensed";
+      size: 15px;
+    }
+    border-left: 1px solid #c96a6a;
+    color: white;
+    display: block;
+    float: left;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: $header-height;
+    vertical-align: middle;
+
+    &:last-child {
+      border-right: 1px solid #c96a6a;
+    }
+
+    &:hover {
+      background-color: #b22a2a;
+      color: #d99595;
+    }
+  }
+}
+
+.user-actions {
+  float: right;
+}
