@@ -19,3 +19,25 @@
           %a{href: '/'} About Us
           %a{href: '/'} Login
     = yield
+    %footer
+      .container
+        .copy
+          .logo WannaEat
+          .text
+            &copy; Copyright
+            %a{href: '//github.com/deril'} Dmytro Bignyak
+            2015
+        .social
+          %a{href: '/'}
+            = image_tag 'facebook.png'
+          %a{href: '/'}
+            = image_tag 'twitter.png'
+          %a{href: '/'}
+            = image_tag 'instagram.png'
+        %nav.footer-list
+          %a{href: '/'} About WannaEat
+          %a{href: '/'} Terms &amp; Conditions
+          %a{href: '/'} Categories
+          %a{href: '/'} Login/Register
+          %a{href: '/'} Sitemap
+

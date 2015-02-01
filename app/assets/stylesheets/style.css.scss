@@ -9,10 +9,32 @@ input {
   padding-left: 14px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.shadow {
+  box-shadow: -12px 0 16px -15px rgba(0,0,0,0.3), 12px 0 16px -15px rgba(0,0,0,0.3);
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
   position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    float: none !important;
+  }
 }
 
 header {
@@ -46,7 +68,6 @@ header {
     display: block;
     float: left;
     padding: 0 20px;
-    text-decoration: none;
     line-height: $header-height;
     vertical-align: middle;
 
@@ -63,4 +84,50 @@ header {
 
 .user-actions {
   float: right;
+}
+
+footer {
+  margin-top: -140px;
+  .container {
+    background-color: #575757;
+    height: 112px;
+    padding-top: 28px;
+  }
+
+  .copy {
+    margin-left: 25px;
+    float: left;
+    .logo {
+      float: none;
+    }
+    .text {
+      margin-left: 10px;
+    }
+  }
+
+  .social {
+    float: left;
+    margin-left: 10px;
+    a {
+      padding-left: 35px;
+    }
+  }
+}
+
+.text, a {
+  color: #cccccc;
+  font: {
+    family: "liberation_sansregular";
+    size: 12px;
+  }
+}
+
+.footer-list {
+  float: right;
+  padding: 0 37px;
+  margin-top: 6px;
+  a {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }

@@ -26,3 +26,126 @@ section[role="search"] {
   border: none;
   background: #4b9a03 image-url("search_icon.png") no-repeat 10px 9px;
 }
+
+aside[role="popular_recipes"] {
+  background-color: #e2fedf;
+  padding: 0 35px 50px;
+  width: 410px;
+  float: left;
+
+  h3 {
+    background: image-url("pop_recipe.png") no-repeat 0 32px;
+    font: {
+      family: "Engine-Regular";
+      size: 36px;
+      weight: normal;
+    }
+    color: #4b9a03;
+    padding: 24px 0 24px 47px;
+    margin: 0;
+  }
+}
+
+aside[role="recently_recipes"] {
+  background-color: #ffecd0;
+  padding: 0 35px 50px;
+  float: left;
+  width: 410px;
+
+  h3 {
+    background: image-url("rec_recipe.png") no-repeat 0 32px;
+    font: {
+      family: "Engine-Regular";
+      size: 36px;
+      weight: normal;
+    }
+    color: #c62f2f;
+    padding: 24px 0 24px 47px;
+    margin: 0;
+  }
+}
+
+ul.recipes-list {
+  font: {
+    family: "Conv_HelveticaNeue-Condensed";
+    size: 14px;
+  }
+  margin: 0 42px 0 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+
+  li {
+    padding: 5px 0;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #417700;
+    }
+  }
+
+  a {
+    color: #636363;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+aside[role="actions"] {
+  height: 193px;
+  background-color: #4e991a;
+  padding-top: 25px;
+
+  .find-best, .create-cookbook, .share-recipes {
+    float: left;
+    margin: 0 36px;
+    font-family: "Engine-Regular";
+    font-size: 31px;
+    color: #ffffff;
+    width: 188px;
+    height: 160px;
+
+    h4 {
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+
+  p {
+    font: {
+      family: "liberation_sansregular";
+      size: 14px;
+    }
+    margin-top: 25px;
+  }
+
+  a {
+    font: {
+      family: "birch_ctt";
+      size: 20px;
+    }
+    color: #8ec061;
+    display: block;
+  }
+  .create-cookbook {
+    background: image-url('cookbook.png') no-repeat 0 0;
+    padding-left: 65px;
+    width: 213px;
+    margin-right: 12px;
+  }
+  .find-best {
+    background: image-url('search.png') no-repeat 0 0;
+    padding-left: 54px;
+  }
+  .share-recipes {
+    background: image-url('share.png') no-repeat 0 0;
+    padding-left: 60px;
+  }
+}
+
+aside[role="recipe-dayly"] {
+  height: 246px;
+}
