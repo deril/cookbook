@@ -86,6 +86,16 @@ header {
   float: right;
 }
 
+.chosen {
+  &:before {
+    position: absolute;
+    content: image-url("chosen.png");
+    top: -20px;
+    left: -50px;
+  }
+  position: relative;
+}
+
 footer {
   margin-top: -140px;
   .container {

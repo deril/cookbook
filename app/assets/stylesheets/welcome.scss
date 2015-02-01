@@ -129,6 +129,10 @@ aside[role="actions"] {
     }
     color: #8ec061;
     display: block;
+    position: absolute;
+    bottom: 34px;
+    background: image-url('arrow.png') no-repeat 65px 13px;
+    width: 90px;
   }
   .create-cookbook {
     background: image-url('cookbook.png') no-repeat 0 0;
@@ -139,6 +143,9 @@ aside[role="actions"] {
   .find-best {
     background: image-url('search.png') no-repeat 0 0;
     padding-left: 54px;
+    a {
+      background-position: 52px 13px;
+    }
   }
   .share-recipes {
     background: image-url('share.png') no-repeat 0 0;
@@ -146,6 +153,52 @@ aside[role="actions"] {
   }
 }
 
-aside[role="recipe-dayly"] {
-  height: 246px;
+aside[role="recipe-daily"] {
+  height: 206px;
+  padding: 40px 44px 0 35px;
+
+  figure, h4 {
+    float: left;
+  }
+
+  figure {
+    margin: 0 28px 0 0;
+    width: 210px;
+    height: 163px;
+  }
+
+  .time {
+    border: 1px solid #eddfdf;
+    background: image-url("clock.png") no-repeat 20px 8px #f7f7f7;
+    padding: 11px 18px 7px 44px;
+    font-size: 14px;
+    font-family: "Conv_HelveticaNeue-Condensed";
+    color: #4b9a03;
+    float: right;
+  }
+
+  h4 {
+    color: #c62f2f;
+    font-size: 28px;
+    font-family: "Engine-Regular";
+    background: image-url("red_arrow.png") no-repeat 0 14px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  .ingredients {
+    float: left;
+  }
+
+  ul {
+    list-style: none;
+    float: left;
+    li {
+      color: #636363;
+      font: {
+        family: "liberation_sansregular";
+        size: 14px;
+      }
+    }
+  }
 }
