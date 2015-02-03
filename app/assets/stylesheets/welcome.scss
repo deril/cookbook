@@ -178,12 +178,14 @@ aside[role="recipe-daily"] {
   }
 
   h4 {
-    color: #c62f2f;
-    font-size: 28px;
-    font-family: "Engine-Regular";
     background: image-url("red_arrow.png") no-repeat 0 14px;
     padding-left: 30px;
     margin: 0;
+    a {
+      color: #c62f2f;
+      font-size: 28px;
+      font-family: "Engine-Regular";
+    }
   }
 
   .ingredients {
