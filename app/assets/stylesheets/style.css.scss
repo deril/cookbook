@@ -101,6 +101,49 @@ header {
   position: relative;
 }
 
+.tooltip.bottom {
+  position: absolute;
+  padding: 5px 0;
+  //  .tooltip-arrow {
+  //    top: 0;
+  //    left: 50%;
+  //    margin-left: -5px;
+  //    border: {
+  //      width: 0 5px 5px;
+  //      style: solid;
+  //      color: transparent transparent #ffffff;
+  //    }
+  //    width: 0;
+  //    height: 0;
+  //    position: absolute;
+  //  }
+  .tooltip-inner {
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    width: 162px;
+
+    &:after, &:before {
+      content: "";
+      border: 5px solid;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+    &:before {
+      border-color: transparent transparent #dedede;
+      border-width: 1px 5px 5px;
+    }
+
+    &:after {
+      margin-top: -2px;
+      border-color: transparent transparent #ffffff;
+    }
+  }
+}
+
 footer {
   margin-top: -140px;
   .container {
