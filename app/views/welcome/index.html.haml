@@ -10,47 +10,85 @@
       %aside{role: 'popular_recipes'}
         %h3 Popular recipes
         %ul.recipes-list
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
+          - some_list = %q(<ul class="list-ul"><li>4 eggs</li><li>1 cup vegetable oil</li><li>2/3 cup water</li><li>3 cups white sugar</li><li>4 eggs</li><li>1 cup vegetable oil</li></ul><div class="cook-time">45 min</div>)
+
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
         %ul.recipes-list
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
       %aside{role: 'recently_recipes'}
         %h3 Recently recipes
         %ul.recipes-list
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
         %ul.recipes-list
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
-          %li= link_to 'Delicious Ham and Potato Soup', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Delicious Ham and Potato Soup'
-          %li= link_to 'Banana Crumb Muffins', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Banana Crumb Muffins'
-          %li= link_to 'Clone of a Cinnabon', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Clone of a Cinnabon'
-          %li= link_to 'Soybean Milk', '#', data: {toggle: 'tooltip', placement: 'bottom'}, title: 'Soybean Milk'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Delicious Ham and Potato Soup', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Banana Crumb Muffins', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Clone of a Cinnabon', '#'
+          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+            = link_to 'Soybean Milk', '#'
     .container
       %aside{role: 'actions'}
         .find-best

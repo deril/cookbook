@@ -87,6 +87,24 @@ header {
   }
 }
 
+.list-ul {
+  padding-left: 11px;
+  list-style: disc;
+  font-family: "liberation_sansregular", sans-serif;
+  font-size: 12px;
+  color: #636363;
+}
+
+.cook-time {
+  background: image_url("red_clock.png") no-repeat 0 0;
+  padding-left: 22px;
+  height: 20px;
+  line-height: 24px;
+  color: #c62f2f;
+  font-family: "halvetica", sans-serif;
+  font-size: 14px;
+}
+
 .user-actions {
   float: right;
 }
@@ -103,7 +121,8 @@ header {
 
 .tooltip.bottom {
   position: absolute;
-  padding: 5px 0;
+  padding: 6px 0;
+  z-index: 1;
   //  .tooltip-arrow {
   //    top: 0;
   //    left: 50%;
@@ -121,6 +140,7 @@ header {
     background-color: #ffffff;
     border: 1px solid #dedede;
     width: 162px;
+    padding: 14px 30px 14px 19px;
 
     &:after, &:before {
       content: "";
@@ -129,7 +149,7 @@ header {
       height: 0;
       position: absolute;
       top: 0;
-      left: 50%;
+      left: 20%;
     }
 
     &:before {
