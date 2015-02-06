@@ -6,6 +6,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.integer :ingredients_count
       t.integer :cooking_time
       t.string :complexity
+      t.boolean :listed, index: true
 
       t.timestamps null: false
     end

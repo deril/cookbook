@@ -18,6 +18,7 @@ gem 'autoprefixer-rails'
 gem 'normalize-rails'
 
 gem 'figaro'
+gem 'arel-helpers'
 
 group :development, :test do
   gem 'sqlite3'

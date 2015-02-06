@@ -19,8 +19,11 @@ ActiveRecord::Schema.define(version: 20150203204326) do
     t.integer  "ingredients_count"
     t.integer  "cooking_time"
     t.string   "complexity"
+    t.boolean  "listed"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
   end
+
+  add_index "recipes", ["listed"], name: "index_recipes_on_listed"
 
 end
