@@ -5,7 +5,8 @@
 ###Ruby version
   2.2.0
 
-* System dependencies
+### System dependencies
+  * SQlite
 
 * Configuration
 
