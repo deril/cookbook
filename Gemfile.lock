@@ -87,6 +87,8 @@ GEM
       thor (~> 0.14)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
+    gretel (3.0.8)
+      rails (>= 3.2.0)
     grit (2.0.0)
       diff-lcs (>= 1.1.2)
       mime-types (>= 1.15)
@@ -253,6 +255,7 @@ DEPENDENCIES
   autoprefixer-rails
   coffee-rails (~> 4.1.0)
   figaro
+  gretel
   haml-rails
   jazz_hands!
   jbuilder (~> 2.0)

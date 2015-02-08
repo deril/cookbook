@@ -13,17 +13,28 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 36px;
+  font-family: "Engine-Regular", sans-serif;
+  margin: 0;
+  color: #4b9a03;
+  font-weight: normal;
+}
+
 .shadow {
   box-shadow: -12px 0 16px -15px rgba(0, 0, 0, 0.3), 12px 0 16px -15px rgba(0, 0, 0, 0.3);
   width: 960px;
   margin: 0 auto;
   padding-bottom: 140px;
+  background-color: #ffffff;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
   position: relative;
+//  padding: 0 35px;
+//  box-sizing: border-box;
 
   &::after {
     content: "";
@@ -38,11 +49,15 @@ a {
 }
 
 header {
-  height: 44px;
+  height: $header-height;
   background-color: #c62f2f;
   position: fixed;
   width: 100%;
   z-index: 2;
+}
+
+section[role="main"] {
+  padding-top: $header-height;
 }
 
 .logo {
@@ -162,6 +177,11 @@ header {
       border-color: transparent transparent #ffffff;
     }
   }
+}
+
+.clear {
+  clear: both;
+  width: 0; height: 0;
 }
 
 footer {

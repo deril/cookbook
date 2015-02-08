@@ -1,0 +1,31 @@
+- breadcrumb @recipe
+%section{role: 'main'}
+  .shadow
+    .container
+      = breadcrumbs separator: ' / '
+
+      %article.recipe
+        %figure{class: ("chosen" if @recipe.listed?)}
+          = image_tag "pasta.png"
+        .recipe__details
+          %h3= @recipe.title
+          .ingredients
+            %ul
+              %li 1 1/2 pounds sweet Italian sausage
+              %li 2 cloves garlic, minced
+              %li 2 small onions, chopped
+              %li 2 (16 ounce) cans whole peeled tomatoes
+              %li 1 1/4 cups dry red wine
+              %li 5 cups beef broth
+              %li 5 cups beef broth 5 cups beef broth 5 cups beef
+              %li 1/2 teaspoon dried basil
+              %li 1/2 teaspoon dried oregano
+              %li 2 zucchini, sliced
+              %li 1 green bell pepper, chopped
+          .meta
+            %dl.clocks
+              %dt Cook
+              %dd.cook-time= cooking_time_formater @recipe.cooking_time
+        .clear
+        .prep-steps= @recipe.description
+

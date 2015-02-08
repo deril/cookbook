@@ -19,6 +19,7 @@ gem 'normalize-rails'
 
 gem 'figaro'
 gem 'arel-helpers'
+gem "gretel"
 
 group :development, :test do
   gem 'sqlite3'
