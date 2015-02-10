@@ -19,7 +19,10 @@ gem 'normalize-rails'
 
 gem 'figaro'
 gem 'arel-helpers'
-gem "gretel"
+gem 'gretel'
+gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'coffee-script-source', '= 1.8.0'
+gem 'react-bootstrap-rails'
 
 group :development, :test do
   gem 'sqlite3'

@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require tooltip
+//= require react
+//= require react_bootstrap
+//= require react_ujs
 //= require_tree .

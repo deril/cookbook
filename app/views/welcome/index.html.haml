@@ -52,8 +52,9 @@
       %aside{role: 'recently_recipes'}
         %h3 Recently recipes
         %ul.recipes-list
-          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
-            = link_to 'Soybean Milk', '#'
+          = react_component('LiWithTooltip',{tooltip: some_list, href: '#', children: 'Soybean Milk'}, :li)
+          -#%li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+          -#  = link_to 'Soybean Milk', '#'
           %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
             = link_to 'Delicious Ham and Potato Soup', '#'
           %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
