@@ -12,8 +12,9 @@
         %ul.recipes-list
           - some_list = %q(<ul class="list-ul"><li>4 eggs</li><li>1 cup vegetable oil</li><li>2/3 cup water</li><li>3 cups white sugar</li><li>4 eggs</li><li>1 cup vegetable oil</li></ul><div class="cook-time">45 min</div>)
 
-          %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
-            = link_to 'Soybean Milk', '#'
+          = react_component('LiWithTooltip',{href: '#', children: 'Soybean Milk'}, :li)
+          -#%li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
+          -#  = link_to 'Soybean Milk', '#'
           %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
             = link_to 'Delicious Ham and Potato Soup', '#'
           %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
@@ -52,7 +53,7 @@
       %aside{role: 'recently_recipes'}
         %h3 Recently recipes
         %ul.recipes-list
-          = react_component('LiWithTooltip',{tooltip: some_list, href: '#', children: 'Soybean Milk'}, :li)
+          = react_component('LiWithTooltip',{href: '#', children: 'Soybean Milk'}, :li)
           -#%li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
           -#  = link_to 'Soybean Milk', '#'
           %li{data: {toggle: 'tooltip', placement: 'bottom'}, title: some_list}
