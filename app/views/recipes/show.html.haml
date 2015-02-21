@@ -11,17 +11,8 @@
           %h3= @recipe.title
           .ingredients
             %ul
-              %li 1 1/2 pounds sweet Italian sausage
-              %li 2 cloves garlic, minced
-              %li 2 small onions, chopped
-              %li 2 (16 ounce) cans whole peeled tomatoes
-              %li 1 1/4 cups dry red wine
-              %li 5 cups beef broth
-              %li 5 cups beef broth 5 cups beef broth 5 cups beef
-              %li 1/2 teaspoon dried basil
-              %li 1/2 teaspoon dried oregano
-              %li 2 zucchini, sliced
-              %li 1 green bell pepper, chopped
+              - @ingredients.each do |ingredient|
+                %li= ingredient.value
           .meta
             %dl.clocks
               %dt Cook

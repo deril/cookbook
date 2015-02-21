@@ -1,6 +1,8 @@
 class Recipe < ActiveRecord::Base
   include ArelHelpers::ArelTable
 
+  has_and_belongs_to_many :ingredients
+
   def self.recipe_of_the_day
     where(listed: true).first
   end
